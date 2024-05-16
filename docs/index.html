@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/output.css" />
     <title>Portfolio</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline text-lime-600">Hello world!</h1>
+  <body class="min-h-screen w-full">
+    <section
+      id="home"
+      class="bg-zinc-800 w-full h-screen flex flex-col justify-center items-center text-center"
+    >
+      <h1 class="text-4xl text-white mb-10">
+        Hello, I'm <span class="text-pink-600">Matthew Williams</span>. <br />
+        I'm a full-stack web developer.
+      </h1>
+      <a
+        href="#about"
+        id="home_btn"
+        class="transition-all duration-300 border text-white py-3 px-4 hover:bg-teal-500 hover:border-teal-500"
+      >
+        View my work
+      </a>
+    </section>
+    <section id="about" class="h-screen">
+      <nav class="bg-zinc-800 p-4 w-full">
+        <ul class="flex text-white gap-8">
+          <li><a href="#home">HOME</a></li>
+          <li class="text-pink-600"><a href="#about">ABOUT</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section id="portfolio" class="h-screen bg-red-100"></section>
+    <section id="blog" class="h-screen bg-orange-100"></section>
+    <section id="contact" class="h-screen bg-amber-100"></section>
   </body>
+  <script src="index.js"></script>
 </html>
