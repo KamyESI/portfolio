@@ -14,18 +14,24 @@
     <title>Portfolio</title>
   </head>
   <body class="min-h-screen w-full">
+    <!-- HEADER -->
     <header>
       <nav id="nav_menu" class="bg-zinc-800 p-4 w-full fixed top-0 hidden">
         <ul class="flex text-white gap-8">
-          <li><a id="nav_link_home" href="#home">HOME</a></li>
-          <li class="text-pink-600"><a href="#about">ABOUT</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li class="hover:text-pink-600">
+            <a id="nav_link_home" href="#home">HOME</a>
+          </li>
+          <li class="hover:text-pink-600"><a href="#about">ABOUT</a></li>
+          <li class="hover:text-pink-600">
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="hover:text-pink-600"><a href="#blog">BLOG</a></li>
+          <li class="hover:text-pink-600"><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <!-- HOME SECTION -->
       <section
         id="home"
         class="bg-zinc-800 w-full h-screen flex flex-col justify-center items-center text-center"
@@ -42,6 +48,8 @@
           View my work
         </a>
       </section>
+
+      <!-- ABOUT SECTION -->
       <section
         id="about"
         class="min-h-screen pt-20 text-zinc-700 mx-10 flex flex-col justify-center items-center"
@@ -178,7 +186,44 @@
           </div>
         </div>
       </section>
-      <section id="portfolio" class="h-screen bg-red-100"></section>
+
+      <!-- PORTFOLIO SECTION -->
+      <section
+        id="portfolio"
+        class="min-h-screen pt-20 pb-10 text-zinc-700 mx-10 flex flex-col justify-start items-center bg-slate-100 w-full"
+      >
+        <h1 class="text-center text-4xl font-semibold mb-4 tracking-wide">
+          PROJECTS
+        </h1>
+        <hr class="w-20 mx-auto border-zinc-700 border-2 mb-10" />
+        <div class="project-card w-1/2 bg-white p-4">
+          <img
+            src="img/responsive.jpg"
+            alt="responsive screens photo"
+            srcset=""
+          />
+        </div>
+        <div class="project-card w-1/2 bg-white">
+          <img src="img/food.jpg" alt="responsive screens photo" srcset="" />
+        </div>
+        <div class="project-card w-1/2 bg-white">
+          <img src="img/relic.png" alt="responsive screens photo" srcset="" />
+        </div>
+        <div class="project-card w-1/2 bg-white">
+          <img
+            src="img/privacy.webp"
+            alt="responsive screens photo"
+            srcset=""
+          />
+        </div>
+        <div class="project-card w-1/2 bg-white">
+          <img
+            src="img/walkTracker.webp"
+            alt="responsive screens photo"
+            srcset=""
+          />
+        </div>
+      </section>
       <section id="blog" class="h-screen bg-orange-100"></section>
       <section id="contact" class="h-screen bg-amber-100"></section>
     </main>
