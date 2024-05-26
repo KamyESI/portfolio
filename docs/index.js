@@ -1,16 +1,46 @@
-/* main button: allows to show the nav menu and the about page */
+/* main button: allows to show the header and the about page */
 document.getElementById("home_btn").addEventListener("click", function () {
   document.getElementById("header").style.display = "block";
 });
 
-/* humburger button: allows to show the humburger menu */
+/* hamburger button: allows to show the hamburger menu */
 document
-  .getElementById("humburger-wrapper")
+  .getElementById("hamburger-wrapper")
   .addEventListener("click", function () {
-    document.getElementById("humburger-menu").style.display = "block";
+    document.getElementById("hamburger-menu").style.display = "block";
   });
 
-/* clicking on home link on the nav menu allows to hide the nav menu */
+/* humburger links allow to hide the hamburger menu */
 document.getElementById("nav_link_home").addEventListener("click", function () {
-  document.getElementById("nav-menu").style.display = "none";
+  document.getElementById("hamburger-menu").style.display = "none";
+  document.getElementById("header").style.display = "none";
 });
+
+document
+  .getElementById("nav_link_about")
+  .addEventListener("click", function () {
+    document.getElementById("hamburger-menu").style.display = "none";
+  });
+
+document
+  .getElementById("nav_link_portfolio")
+  .addEventListener("click", function () {
+    document.getElementById("hamburger-menu").style.display = "none";
+  });
+
+document.getElementById("nav_link_blog").addEventListener("click", function () {
+  document.getElementById("hamburger-menu").style.display = "none";
+});
+
+document
+  .getElementById("nav_link_contact")
+  .addEventListener("click", function () {
+    document.getElementById("hamburger-menu").style.display = "none";
+  });
+
+/* home link in the nav menu allows to hide the header */
+document
+  .getElementById("nav_link_home_menu")
+  .addEventListener("click", function () {
+    document.getElementById("header").style.display = "none";
+  });
