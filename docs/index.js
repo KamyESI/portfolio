@@ -3,6 +3,16 @@ document.getElementById("home_btn").addEventListener("click", function () {
   document.getElementById("header").style.display = "block";
 });
 
+/* main button: turns the arrow down when mouse enters */
+document.getElementById("home_btn").addEventListener("mouseenter", function () {
+  document.getElementById("arrow").style.transform = "rotate(90deg)";
+});
+
+/* main button: turns the arrow up when mouse leaves */
+document.getElementById("home_btn").addEventListener("mouseleave", function () {
+  document.getElementById("arrow").style.transform = "rotate(0deg)";
+});
+
 /* hamburger button: allows to show the hamburger menu */
 document
   .getElementById("hamburger-wrapper")
