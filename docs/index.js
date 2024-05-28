@@ -54,3 +54,67 @@ document
   .addEventListener("click", function () {
     document.getElementById("header").style.display = "none";
   });
+
+/* MOUSE ENTER AND LEAVE THE PROJECT CARD */
+
+/*mouse enters */
+document
+  .getElementById("project-card-1")
+  .addEventListener("mouseenter", function () {
+    document.getElementById("overview-1").style.opacity = "100";
+  });
+
+document
+  .getElementById("project-card-2")
+  .addEventListener("mouseenter", function () {
+    document.getElementById("overview-2").style.opacity = "100";
+  });
+
+document
+  .getElementById("project-card-3")
+  .addEventListener("mouseenter", function () {
+    document.getElementById("overview-3").style.opacity = "100";
+  });
+
+document
+  .getElementById("project-card-4")
+  .addEventListener("mouseenter", function () {
+    document.getElementById("overview-4").style.opacity = "100";
+  });
+
+document
+  .getElementById("project-card-5")
+  .addEventListener("mouseenter", function () {
+    document.getElementById("overview-5").style.opacity = "100";
+  });
+
+/*mouse leaves */
+document
+  .getElementById("project-card-1")
+  .addEventListener("mouseleave", function () {
+    document.getElementById("overview-1").style.opacity = "0";
+  });
+
+document
+  .getElementById("project-card-2")
+  .addEventListener("mouseleave", function () {
+    document.getElementById("overview-2").style.opacity = "0";
+  });
+
+document
+  .getElementById("project-card-3")
+  .addEventListener("mouseleave", function () {
+    document.getElementById("overview-3").style.opacity = "0";
+  });
+
+document
+  .getElementById("project-card-4")
+  .addEventListener("mouseleave", function () {
+    document.getElementById("overview-4").style.opacity = "0";
+  });
+
+document
+  .getElementById("project-card-5")
+  .addEventListener("mouseleave", function () {
+    document.getElementById("overview-5").style.opacity = "0";
+  });
