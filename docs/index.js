@@ -38,10 +38,6 @@ document
     document.getElementById("hamburger-menu").style.display = "none";
   });
 
-document.getElementById("nav_link_blog").addEventListener("click", function () {
-  document.getElementById("hamburger-menu").style.display = "none";
-});
-
 document
   .getElementById("nav_link_contact")
   .addEventListener("click", function () {
