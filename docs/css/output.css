@@ -1081,10 +1081,6 @@ video {
   transition-duration: 500ms;
 }
 
-.duration-100 {
-  transition-duration: 100ms;
-}
-
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
